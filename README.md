@@ -1,3 +1,24 @@
+InfiniteScroll
+==============
+
+React native scroll view (infnite). This is a really working react native infinite scroll view component. 
+Compatable with both IOS & Android. Fine with all react native versions.
+
+## Usage
+```js
+<InfiniteScroll
+	onLoadMoreAsync={this.loadMorePage()}
+  style={styles.scrollView}
+	{...prop}
+	>
+{...children}
+</InfiniteScroll>
+```
+
+
+### Example
+
+```js
 var React = require('react');
 var {
 	Text,
@@ -25,8 +46,8 @@ var Example = React.createClass({
 	},
 	render(){
 		return (
-			<InfiniteScroll
-          onLoadMoreAsync={this.loadMorePage()}
+				<InfiniteScroll 
+					onLoadMoreAsync={this.loadMorePage()}
           style={styles.scrollView}
         >
           <ListView
@@ -41,4 +62,6 @@ var Example = React.createClass({
 
 
 module.exports = Example
+```
+
 
