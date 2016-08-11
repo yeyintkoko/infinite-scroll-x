@@ -1,7 +1,7 @@
 InfiniteScroll
 ==============
 
-React native scroll view (infnite). This is a really working react native infinite scroll view component. 
+React native scroll view (infnite). This is a really working react native infinite scroll view component.
 Compatable with both IOS & Android. Fine with all react native versions.
 
 ## Usage
@@ -24,18 +24,19 @@ var {
 	Text,
 	ListView
 } = require('react-native');
-var InfiniteScroll = require('infinite-scroll');
+var InfiniteScroll = require('infinite-scroll-x');
 
-var Example = React.createClass({	
+var Example = React.createClass({
 	getInitialState(){
 		var ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
-		var rows = [1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9]
+		var rows = ["China","Korea","Singapore","Malaysia"]
 		return {
 			data: rows,
 			dataSource: ds.cloneWithRows(rows)
 		}
 	},
 	loadMorePage(){
+		//here .. collect the data from server somehow
 		let new_data = ['Japan','Myanmar','India','Thailand'];
 		let rows = this.state.data;
 		rows.push.apply(rows, new_data);
@@ -46,15 +47,12 @@ var Example = React.createClass({
 	},
 	render(){
 		return (
-				<InfiniteScroll 
-					onLoadMoreAsync={this.loadMorePage()}
-          style={styles.scrollView}
-        >
+				<InfiniteScroll onLoadMoreAsync={this.loadMorePage()} style={styles.scrollView}>
           <ListView
-						enableEmptySections={true}
-            dataSource={this.state.dataSource}
-            renderRow={(data)=><Text>{data}</Text>}
-          />
+					enableEmptySections={true}
+					dataSource={this.state.dataSource}
+					renderRow={(data)=><Text>{data}</Text>}
+					/>
         </InfiniteScroll>
 		);
 	}
@@ -63,5 +61,3 @@ var Example = React.createClass({
 
 module.exports = Example
 ```
-
-
