@@ -61,3 +61,8 @@ var Example = React.createClass({
 
 module.exports = Example
 ```
+
+## Support on Beerpay
+Hey dude! Help me out for a couple of :beers:!
+
+[![Beerpay](https://beerpay.io/yeyintkoko/infinite-scroll-react-native/badge.svg?style=beer-square)](https://beerpay.io/yeyintkoko/infinite-scroll-react-native)  [![Beerpay](https://beerpay.io/yeyintkoko/infinite-scroll-react-native/make-wish.svg?style=flat-square)](https://beerpay.io/yeyintkoko/infinite-scroll-react-native?focus=wish)
