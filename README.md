@@ -8,7 +8,8 @@ Compatable with both IOS & Android. Fine with all react native versions.
 ```js
 <InfiniteScroll
 	onLoadMoreAsync={this.loadMorePage()}
-  style={styles.scrollView}
+	horizontal={false}  //true - if you want in horizontal
+	style={styles.scrollView}
 	{...prop}
 	>
 {...children}
@@ -47,16 +48,16 @@ var Example = React.createClass({
 	},
 	render(){
 		return (
-				<InfiniteScroll
-				horizontal={false}	//true - if you want in horizontal
-				onLoadMoreAsync={this.loadMorePage()}
-				style={styles.scrollView}>
-          <ListView
+			<InfiniteScroll
+			horizontal={false}	//true - if you want in horizontal
+			onLoadMoreAsync={this.loadMorePage()}
+			style={styles.scrollView}>
+			          <ListView
 					enableEmptySections={true}
 					dataSource={this.state.dataSource}
 					renderRow={(data)=><Text>{data}</Text>}
 					/>
-        </InfiniteScroll>
+		        </InfiniteScroll>
 		);
 	}
 });
