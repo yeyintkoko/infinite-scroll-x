@@ -1,6 +1,6 @@
 {
   "name": "infinite-scroll-x",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Infinite Scroll View React Native",
   "main": "index.js",
   "scripts": {
@@ -20,7 +20,7 @@
     "end less",
 		"ScrollView",
 		"react native",
-    "infinite scroll view react native",
+    "infinite scroll view react native"
   ],
   "author": "Ye Yint Ko Ko",
   "license": "MIT",
