@@ -47,7 +47,10 @@ var Example = React.createClass({
 	},
 	render(){
 		return (
-				<InfiniteScroll onLoadMoreAsync={this.loadMorePage()} style={styles.scrollView}>
+				<InfiniteScroll
+				horizontal={false}	//true - if you want in horizontal
+				onLoadMoreAsync={this.loadMorePage()}
+				style={styles.scrollView}>
           <ListView
 					enableEmptySections={true}
 					dataSource={this.state.dataSource}

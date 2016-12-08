@@ -19,6 +19,7 @@ var InfiniteScroll = React.createClass({
     },
 
     _shouldLoadMore(event) {
+      if(this.props.horizontal) return this._distanceFromEnd(event) < 1;
       return this._distanceFromEnd(event) < 5;
     },
 
@@ -53,6 +54,7 @@ var InfiniteScroll = React.createClass({
     render() {
       return (
         <ScrollView
+        {...this.props}
         automaticallyAdjustContentInsets={false}
         onScroll={this._handleScroll}
         scrollEventThrottle={200}
