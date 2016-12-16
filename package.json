@@ -1,6 +1,6 @@
 {
   "name": "infinite-scroll-x",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Infinite Scroll View React Native",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yeyintkoko/infinite-scroll-react-native.git"
+    "url": "git+https://github.com/yeyintkoko/infinite-scroll-x.git"
   },
   "keywords": [
     "infinite",
@@ -25,7 +25,7 @@
   "author": "Ye Yint Ko Ko",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yeyintkoko/infinite-scroll-react-native/issues"
+    "url": "https://github.com/yeyintkoko/infinite-scroll-x/issues"
   },
-  "homepage": "https://github.com/yeyintkoko/infinite-scroll-react-native#readme"
+  "homepage": "https://github.com/yeyintkoko/infinite-scroll-x#readme"
 }
