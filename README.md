@@ -4,6 +4,9 @@ InfiniteScroll
 React native scroll view (infnite). This is a really working react native infinite scroll view component.
 Compatable with both IOS & Android. Fine with all react native versions.
 
+## Install
+npm i infinite-scroll-x --save
+
 ## Usage
 ```js
 <InfiniteScroll
